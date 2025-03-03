@@ -1,6 +1,11 @@
-<h1>Please ask your question</h1>
+<h1 class="text-center mt-5">Please ask your question</h1>
 
-<form action="/answer" data-turbo="false">
-  <input type="text" name="ask">
-  <input type="submit" value="Ask!">
-</form>
+<div class="container d-flex justify-content-center mt-4">
+  <form action="/answer" data-turbo="false" class="w-50 p-4 border rounded shadow">
+    <div class="mb-3">
+      <label for="ask" class="form-label">Your question:</label>
+      <input type="text" class="form-control" id="ask" name="ask" placeholder="Type your question here...">
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Ask!</button>
+  </form>
+</div>
